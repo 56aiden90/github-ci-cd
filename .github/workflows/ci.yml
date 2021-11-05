@@ -25,7 +25,7 @@ jobs:
     steps: # defind a series of tasks to run in a job.
     - uses: actions/checkout@v2 # https://github.com/actions/checkout
     - name: Use Node.js ${{ matrix.node-version }} # expression syntax ${{ expression }}
-    - uses: actions/setup-node@v2 # https://github.com/actions/setup-node. This action manages Node.js in the runner system,
+      uses: actions/setup-node@v2 # https://github.com/actions/setup-node. This action manages Node.js in the runner system,
     # dependency strategy, etc.
       with:
         node-version: ${{ matrix.node-version }} # Three jobs will run in different node.js versions as you specified in strategy.matrix.
