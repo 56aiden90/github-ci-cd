@@ -6,7 +6,8 @@ name: Node.js CI
 on:
   push: # push event covers merge as well.
     branches:
-      - master 
+      - master
+      - main
       - release/**
     tags:
       - v1.*
