@@ -19,7 +19,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x] # define a matrix of different configurations.
+        # node-version: [12.x, 14.x, 16.x] # define a matrix of different configurations.
+        node-version: [16.x] # define a matrix of different configurations.
 
     steps: # defind a series of tasks to run in a job.
     - uses: actions/checkout@v2 # https://github.com/actions/checkout
@@ -41,4 +42,5 @@ jobs:
       with:
         node-version: '16'
         cache: 'npm'
+        cache-dependency-path: '../package-lock.json'
     - run: npm run start
