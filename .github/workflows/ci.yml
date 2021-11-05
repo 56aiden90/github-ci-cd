@@ -43,5 +43,5 @@ jobs:
       with:
         node-version: '16'
         cache: 'npm'
-        cache-dependency-path: '../package-lock.json'
+        cache-dependency-path: '/home/runner/work/github-ci-cd//package-lock.json'
     - run: npm run start
