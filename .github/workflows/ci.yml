@@ -40,3 +40,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: npm run start
+      working-directory: /home/runner/work/github-ci-cd
