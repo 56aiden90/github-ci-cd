@@ -41,7 +41,7 @@ jobs:
     steps:
     - uses: actions/setup-node@v2
       with:
-        node-version: '16'
+        node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: '/home/runner/work/github-ci-cd/package-lock.json'
+        cache-dependency-path: '**/package-lock.json'
     - run: npm run start
